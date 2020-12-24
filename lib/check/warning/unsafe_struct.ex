@@ -9,7 +9,8 @@ defmodule CivilCredo.Check.Warning.UnsafeStruct do
 
   @explanation [check: @moduledoc]
 
-  use Credo.Check, base_priority: :high, category: :warning, exit_status: 2
+  # , exit_status: 2
+  use Credo.Check, base_priority: :high, category: :warning
 
   @doc false
   def run(source_file, params \\ []) do
